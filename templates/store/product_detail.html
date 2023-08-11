@@ -1,7 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block styles %}
+{{ block.super }}
+<style>
+  /* Place the styles here */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .section-content {
+    flex: 1 0 auto;
+  }
+</style>
+{% endblock %}
+
 {% block content %}
+
 
 <section class="section-content padding-y bg">
 	<div class="container">

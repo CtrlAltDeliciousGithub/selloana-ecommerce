@@ -1,4 +1,4 @@
-{% autoescape off %}
+<!-- {% autoescape off %}
 
 Hi {{user.first_name}},
 
@@ -7,4 +7,38 @@ http://{{domain}}{% url 'activate' uidb64=uid token=token %}
 
 If you think it's not you, please ignore this email.
 
+{% endautoescape %} -->
+
+{% autoescape off %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body style="background-color: #f9f9f9; font-family: Arial, sans-serif;">
+
+<table cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; margin: 0 auto; background-color: #fff; border: 1px solid #dddddd;">
+    <tr>
+        <td style="padding: 20px;">
+            <p>Hello {{ user.first_name }},</p>
+            <p>We're thrilled to have you as part of our community. To get started, please click the button below to confirm your registration:</p>
+            
+            <table cellpadding="0" cellspacing="0" align="center">
+                <tr>
+                    <td style="border-radius: 3px; background-color: #2F67F6;">
+                        <a href="http://{{ domain }}{% url 'activate' uidb64=uid token=token %}" style="padding: 15px 25px; font-size: 15px; color: #ffffff; text-decoration: none; display: inline-block;">Confirm Registration</a>
+                    </td>
+                </tr>
+            </table>
+            
+            <p>If you didn't expect this email or didn't initiate the registration process, please ignore it. Your account's security is important to us.</p>
+            
+            <p>Thank you and welcome aboard!</p>
+            <p>The Selloana Team</p>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
 {% endautoescape %}

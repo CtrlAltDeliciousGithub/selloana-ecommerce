@@ -81,4 +81,41 @@
   }
 }
 
+
+
+footer.section-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  z-index: 9999;
+  height: 60px; /* Adjust the height value as per your requirement */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+footer.section-footer .footer-bottom .col-md-2,
+footer.section-footer .footer-bottom .col-md-8,
+footer.section-footer .footer-bottom .col-md-2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
 /*# sourceMappingURL=responsive.css.map */
+
+
+

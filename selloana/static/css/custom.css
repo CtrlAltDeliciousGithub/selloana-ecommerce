@@ -1,3 +1,172 @@
+footer.section-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  z-index: 9999;
+  height: 50px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Adjust the position of the main content */
+.main-content {
+  padding-bottom: 60px; /* Adjust the value as needed */
+}
+
+/* Adjust the spacing within the footer */
+footer.section-footer .container {
+  padding-top: 10px; /* Adjust the value as needed */
+  padding-bottom: 10px; /* Adjust the value as needed */
+
+
+}
+
+.padding-y-sm {
+  margin-bottom: 20px; /* Add margin bottom to create space */
+}
+
+/* Center the footer content */
+footer.section-footer .footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure the footer has a defined height */
+
+}
+
+/* Update the margin and padding of the footer sections */
+footer.section-footer .footer-bottom .col-md-2,
+footer.section-footer .footer-bottom .col-md-8,
+footer.section-footer .footer-bottom .col-md-2 {
+  margin-top: 5px; /* Adjust the value as needed */
+  margin-bottom: 5px; /* Adjust the value as needed */
+  padding: 0;
+}
+
+/* Update the font size and color of the footer text */
+footer.section-footer p.text-muted,
+footer.section-footer span {
+  font-size: 12px; /* Adjust the font size as needed */
+  color: #777;
+}
+
+/* Update the color of the footer icons */
+footer.section-footer i {
+  color: #777;
+}
+
+.border-top {
+  border-top: none !important;
+}
+
+
+/* ################### Button Design ################### */
+
+.btn-primary {
+  color: #fff;
+  background-color: #0000FF;
+  border-color: #0000FF;
+  font-family: cabinetGrotesk,Arial,sans-serif;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #0000FF;
+  border-color: #0000FF;
+  font-family: cabinetGrotesk,Arial,sans-serif;
+  font-weight: 700;
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #0000FF;
+  border-color: #0000FF;
+  font-family: cabinetGrotesk,Arial,sans-serif;
+  font-weight: 700;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #0000FF;
+  border-color: #0000FF;
+  font-family: cabinetGrotesk,Arial,sans-serif;
+  font-weight: 700;
+}
+
+.btn-light {
+  background-color: #fff;
+  border-color: #e4e4e4;
+  font-family: cabinetGrotesk,Arial,sans-serif;
+  font-weight: 700;
+}
+
+
+.text-muted {
+  color: #969696 !important;
+  font-family: cabinetGrotesk,Arial,sans-serif;
+  font-weight: 700;
+}
+
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.37rem;
+  font-family: cabinetGrotesk,Arial,sans-serif;
+  font-weight: 700;
+}
+
+body {
+    margin: 0;
+    font-family: cabinetGrotesk,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #717171;
+    text-align: left;
+    background-color: #fff;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.9rem + 2px);
+    padding: 0.45rem 0.85rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+a {
+  color: #0000ff;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: #00002B;
+  text-decoration: underline;
+}
+
 /* Hide Radio button */
 .rate > input{
   display: none;
@@ -32,17 +201,17 @@
 
 /* Click and hover */
 input:checked ~ label, label:hover ~ label{
-  color: #ffb503;
+  color: #0000ff;
 }
 
 /* hover hightlight */
 input:checked + label:hover, input:checked ~ label:hover,input:checked ~ label:hover ~ label,
 label:hover ~ input:checked ~ label{
-  color: #cc9000;
+  color: #0000ff;
 }
 
 .rating-star i{
-  color: #ffb503 !important;
+  color: #0000ff !important;
 }
 
 ul.thumb {
